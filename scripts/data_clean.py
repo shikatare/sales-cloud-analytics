@@ -1,0 +1,10 @@
+import pandas as pd
+df=pd.read_csv('data/raw/orders.csv')
+print("Original Data Shape:",df.shape)
+print(df.columns)
+df['Order Date']=pd.to_datetime(df['Order Date'],dayfirst=True,errors='coerce')
+print("Missing Values:\n",df.isnull().sum())
+df=df.drop_duplicates()
+print("Cleaned Data Shape:",df.shape)
+df.to_csv('scripts/dataclean/orders_cleaned.csv',index=False)
+print("Cleaned data saved to 'scripts/dataclean/orders_cleaned.csv'")
