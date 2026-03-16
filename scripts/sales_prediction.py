@@ -1,10 +1,27 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
 
 # Load cleaned dataset
 df = pd.read_csv("scripts/dataclean/orders_cleaned.csv")
 
+# Remove columns that should not be used for prediction
+df = df.drop(columns=[
+    "Row ID",
+    "Order ID",
+    "Customer ID",
+    "Customer Name",
+    "Product ID",
+    "Product Name"
+])
+
+# Convert categorical columns into numerical features
+df = pd.get_dummies(
+    df,
+    columns=["Category", "Sub-Category", "Region", "Segment", "Ship Mode"],
+    drop_first=True
+)
+
+print("Data preprocessing completed")
+print("Dataset shape:", df.shape)
 # Remove identifiers (not useful for prediction)
 df = df.drop(columns=[
     "Row ID",
