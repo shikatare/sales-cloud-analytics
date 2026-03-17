@@ -1,0 +1,5 @@
+Cluster,Sales,Frequency,Recency,Segment,Business_Action
+0,3600.316068421053,17.39097744360902,73.44360902255639,Silver Customers (Loyal),Upsell and convert to high-value customers
+1,9677.593152542373,20.559322033898304,127.66101694915254,Gold Customers (High Value),Retain with premium offers and loyalty rewards
+2,1589.133312465374,8.750692520775623,92.32409972299169,Occasional Customers,Target with promotions to increase frequency
+3,1404.3758570093457,7.392523364485982,538.4018691588785,Lost Customers,Run re-engagement campaigns
