@@ -77,6 +77,8 @@ def run(input_path: str):
     df.drop(columns=[c for c in drop_cols if c in df.columns], inplace=True)
 
     feature_cols = [c for c in df.columns if c not in [TARGET_RAW, TARGET_LOG]]
+    # fix: fill any NaNs produced by frequency encoding or date parsing
+    df[feature_cols] = df[feature_cols].fillna(df[feature_cols].median())
     print(f"\n  Features ({len(feature_cols)}) :  {feature_cols}")
 
     # ── Train / test split ───────────────────
