@@ -33,13 +33,13 @@ An interactive sales analytics dashboard built in Tableau Public.
 - Actual vs predicted sales comparison
 - Filters: Region, Category, Sub-Category, Year
 
-# Project Structure
+#Project Structure
 sales-cloud-analytics/
 │
-├── data/                  # Raw & processed datasets
-├── scripts/               # Python scripts (EDA, training, visualization)
-├── notebooks/             # Jupyter notebooks (analysis)
-├── dashboard/             # Tableau dashboard files
+├── data/                     # Raw & processed datasets
+├── scripts/                  # Python scripts (EDA, training, visualization)
+├── notebooks/                # Jupyter notebooks (analysis)
+├── dashboard/                # Tableau dashboard files
 └── README.md
 
 # How to Run the Project
