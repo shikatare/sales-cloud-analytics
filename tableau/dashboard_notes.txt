@@ -1,1 +1,2 @@
 KPI sheet: Total Sales, Order Count, Avg Order Value
+Sales by Category bar chart with sub-category color coding
