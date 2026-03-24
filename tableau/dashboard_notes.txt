@@ -2,3 +2,4 @@ KPI sheet: Total Sales, Order Count, Avg Order Value
 Sales by Category bar chart with sub-category color coding
 Monthly Sales Trend line chart with average reference line
 Geographic sales heatmap by US state using filled map
+Customer segmentation scatter plot with KMeans cluster coloring
