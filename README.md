@@ -18,8 +18,42 @@ Businesses generate large volumes of sales and customer data, but often struggle
 ##  System Architecture
 Raw Data → Cloud Storage (S3) → Processing (EC2 + Python) → Analytics → Dashboard
 
-##  Expected Outputs
-- Sales performance dashboards
-- Customer segmentation analysis
-- Business insights and recommendations
+## Tableau Dashboard
+
+An interactive sales analytics dashboard built in Tableau Public.
+
+**Live Dashboard:** https://public.tableau.com/views/SalesCloudAnalyticsDashboard/SalesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+### Sheets built:
+- KPI overview: total sales, order count, avg order value
+- Sales by category and sub-category
+- Monthly sales trend with average reference line
+- Geographic sales heatmap by US state
+- Customer segmentation scatter plot
+- Actual vs predicted sales comparison
+- Filters: Region, Category, Sub-Category, Year
+
+# Project Structure
+sales-cloud-analytics/
+│
+├── data/                  # Raw & processed datasets
+├── scripts/               # Python scripts (EDA, training, visualization)
+├── notebooks/             # Jupyter notebooks (analysis)
+├── dashboard/             # Tableau dashboard files
+└── README.md
+
+# How to Run the Project
+Clone the repository:
+git clone https://github.com/shikatare/sales-cloud-analytics.git
+cd sales-cloud-analytics
+Create a virtual environment:
+python3 -m venv venv
+source venv/bin/activate
+Install dependencies:
+pip install pandas numpy scikit-learn matplotlib
+Run pipeline:
+python scripts/sales_prediction.py
+
+
+
 
