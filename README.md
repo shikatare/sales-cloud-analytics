@@ -20,7 +20,11 @@ Raw Data → Cloud Storage (S3) → Processing (EC2 + Python) → Analytics → 
 
 ## Tableau Dashboard
 
+<<<<<<< HEAD
 Interactive sales analytics dashboard built in Tableau Public.
+=======
+An interactive sales analytics dashboard built in Tableau Public.
+>>>>>>> ecf7d6af32beb287c346e02b58227c4b91ccffb4
 
 **Live Dashboard:** https://public.tableau.com/views/SalesCloudAnalyticsDashboard/SalesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
@@ -33,6 +37,7 @@ Interactive sales analytics dashboard built in Tableau Public.
 - Actual vs predicted sales comparison
 - Filters: Region, Category, Sub-Category, Year
 
+<<<<<<< HEAD
 # Project Structure
 sales-cloud-analytics/
 │
@@ -41,12 +46,18 @@ sales-cloud-analytics/
 ├── notebooks/             # Jupyter notebooks (analysis)
 ├── dashboard/             # Tableau dashboard files
 └── README.md
+=======
+>>>>>>> ecf7d6af32beb287c346e02b58227c4b91ccffb4
 
 # How to Run the Project
 Clone the repository:
 git clone https://github.com/shikatare/sales-cloud-analytics.git
 cd sales-cloud-analytics
+<<<<<<< HEAD
 Create virtual environment:
+=======
+Create a virtual environment:
+>>>>>>> ecf7d6af32beb287c346e02b58227c4b91ccffb4
 python3 -m venv venv
 source venv/bin/activate
 Install dependencies:
@@ -55,4 +66,8 @@ Run pipeline:
 python scripts/sales_prediction.py
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ecf7d6af32beb287c346e02b58227c4b91ccffb4
 
