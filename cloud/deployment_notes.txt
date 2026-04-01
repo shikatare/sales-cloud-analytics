@@ -1,0 +1,3 @@
+S3 Bucket: sales-cloud-analytics-anshika
+Region: us-east-1
+Files uploaded: orders_cleaned.csv, sales_predictions_final.csv, customer_segments.csv, tableau_ready.csv
